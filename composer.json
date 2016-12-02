@@ -1,0 +1,8 @@
+{
+  "name": "wapone/status-products-manager",
+  "description": "A Magento extension to schedule products enabling/disabling",
+  "type": "magento-module",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  }
+}
