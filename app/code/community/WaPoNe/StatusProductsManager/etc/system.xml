@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <WaPoNe translate="label">
+            <label><![CDATA[<div style="height: 10px;"><a href="http://www.fantetti.net" target="_blank">
+            <img id="wapone_block" src="" alt="" style="vertical-align:middle" /> WaPoNe</a></div>&nbsp;<script>
+            var n = SKIN_URL.indexOf("adminhtml");
+            $('wapone_block').src = SKIN_URL.substring(0, n) + "adminhtml/default/default/images/wapone/wapone.png";
+            </script>]]></label>
+            <sort_order>300</sort_order>
+        </WaPoNe>
+    </tabs>
+    <sections>
+        <statusproductsmanager translate="label">
+            <label>Status Products Manager</label>
+            <tab>WaPoNe</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>4</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <statusproductsmanager_group translate="label">
+                    <label>Status Products Manager</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <module_activation_status>
+                            <label>Enable activation</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </module_activation_status>
+                        <productstoactivate>
+                            <label>Products to activate</label>
+                            <comment>Enter products SKUs, separated by ';'</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </productstoactivate>
+                        <activestartdate translate="label">
+                            <label>Date for products activation</label>
+                            <comment>Enter the date in format yyyy-mm-dd</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </activestartdate>
+                        <activestarttime>
+                            <label>Time for products activation</label>
+                            <comment>hh/mm/ss</comment>
+                            <frontend_type>time</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </activestarttime>
+                        <module_deactivation_status>
+                            <label>Enable deactivation</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </module_deactivation_status>
+                        <productstodeactivate>
+                            <label>Products to deactivate</label>
+                            <comment>Enter products SKUs, separated by ';'</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>0</show_in_store>
+                            <show_in_website>0</show_in_website>
+                        </productstodeactivate>
+                        <deactivestartdate translate="label">
+                            <label>Date for products deactivation</label>
+                            <comment>Enter the date in format yyyy-mm-dd</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </deactivestartdate>
+                        <deactivestarttime>
+                            <label>Time for products deactivation</label>
+                            <comment>hh/mm/ss</comment>
+                            <frontend_type>time</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </deactivestarttime>
+                    </fields>
+                </statusproductsmanager_group>
+            </groups>
+        </statusproductsmanager>
+    </sections>
+</config>

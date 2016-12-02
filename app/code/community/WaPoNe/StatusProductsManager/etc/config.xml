@@ -1,0 +1,28 @@
+<config>
+    <modules>
+        <WaPoNe_StatusProductsManager>
+            <version>1.0.0</version>
+        </WaPoNe_StatusProductsManager>
+    </modules>
+
+    <global>
+        <models>
+            <wapone_statusproductsmanager>
+                <class>WaPoNe_StatusProductsManager_Model</class>
+            </wapone_statusproductsmanager>
+        </models>
+    </global>
+
+    <crontab>
+        <jobs>
+            <wapone_status_products_manage>
+                <schedule>
+                    <cron_expr>*/5 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>wapone_statusproductsmanager/statusproductsmanager::manageProductsStatus</model>
+                </run>
+            </wapone_status_products_manage>
+        </jobs>
+    </crontab>
+</config>
