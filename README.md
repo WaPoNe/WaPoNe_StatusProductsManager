@@ -13,19 +13,21 @@ Please use the “Merge” upload mode. Do not replace the whole folders, but me
 
 ## User Guide
 
+**This extension enable/disable products changing 'product status attribute' so the product will be enabled/disabled for all the store views configured **
+
 ### Enabling products
 
 1. Go to System - Configuration - WaPoNe - Status Products Manager.
 ![](doc/images/statusproductsmanager_config.png)
 2. Set to 'Yes' *Enabling* field if you want to enable shipping methods.
-3. Insert products SKUs to enable.
+3. Insert products SKUs to enable, separated by ';'.
 4. Enter the date and the time when script has to start (cron job *wapone_status_products_manage* runs every five minutes by default).
 
 ### Disabling products
 
 1. Go to System - Configuration - WaPoNe - Status Products Manager.
 2. Set to 'Yes' *Disabling* field if you want to disable products.
-3. Insert products SKUs to disable.
+3. Insert products SKUs to disable, separated by ';'.
 4. Enter the date and the time when script has to start (cron job *wapone_status_products_manage* runs every five minutes by default).
 
 **After script was executed, _Enabling/Disabling_ field will set to 'No' to avoid it is execute more times**
